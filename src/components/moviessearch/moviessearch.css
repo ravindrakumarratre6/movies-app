@@ -1,0 +1,74 @@
+/* Style the search input */
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* Style the list of movies */
+.movies-lists {
+  width: 205px;
+  height: 315px;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid rgb(103, 103, 103);
+  border-radius: 10px;
+}
+
+/* Style the container for the search input and movie results */
+.movies-containter {
+  position: absolute;
+  z-index: 3;
+  background-color: black;
+  margin: 0;
+  max-height: 90vh;
+  overflow: scroll;
+  display: flex;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.titles{
+  color: white;
+  position: relative;
+  bottom: 135px;
+  visibility: hidden; /* Initially hidden */
+}
+.overview {
+    color: white;
+    position: relative;
+    bottom: 135px;
+    visibility: hidden; /* Initially hidden */
+}
+.release-date {
+  position: relative;
+  bottom: 155px;
+  left: 120px;
+  color: white;
+  visibility: hidden; /* Initially hidden */
+}
+
+.img {
+  width: 210px;
+  height: 320px;
+  object-fit: cover;
+  position: relative;
+}
+
+.img:hover {
+  opacity: 0.3;
+}
+
+.img:hover + .titles{
+    visibility: visible;
+}
+.img:hover + .release-date {
+  visibility: visible;
+}
+.img:hover + .overview{
+    visibility: visible;
+}

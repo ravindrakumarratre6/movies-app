@@ -1,0 +1,60 @@
+/* Base styles for the movie list */
+.movie__list {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.list__title {
+    font-size: 1.75rem;
+    margin: 2.5rem;
+}
+
+.list__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin: 1rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .movie__list {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .list__title {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    .card {
+        width: 150px;
+        height: 250px;
+    }
+}
+
+/* Media Query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .movie__list {
+        padding: 0.5rem;
+    }
+
+    .list__title {
+        font-size: 1.25rem;
+        margin: 0.5rem;
+    }
+
+    .card {
+        width: 100px;
+        height: 200px;
+    }
+}
